@@ -6,7 +6,9 @@
     background: #008c7a;
     height: 70px;
 } */
-
+body{
+    background: rgba(243, 243, 243,1);
+}
  .left-box {
     float: left;
   
@@ -161,11 +163,42 @@
    cursor: pointer;
     margin-left: 6px;
 }
+
+.top{
+    font-size: 20px;
+    height: 70px;
+    background: white;
+    line-height: 70px;
+    font-weight: 500;
+}
+
+ .list-box h2{
+    font-size: 18px;
+    font-weight: 400;
+    clear: both;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    padding: 0;
+    margin: 0;
+    text-indent: 10px;
+    /* margin-top: 10px; */
+}
+.list-box{
+    background: white;
+    overflow: visible;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 20px auto;
+}
+
 .map{
     display: flex;
     overflow:visible;
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
+
+
 .map > .left-box{
    flex: 1;
   }
@@ -176,14 +209,40 @@
 .map  > .right-box{
      width: 430px;
 }
-
+.map > dl{
+    clear: both;
+    width: 100%;
+    overflow: visible;
+}
 .map > dl > dt{
     height: 50px;
     line-height: 50px;
-    border-bottom: 1px #ccc solid;
+    border-bottom: 1px #008c7a solid;
     width: 100%;
     /* margin: 0 10px; */
 }
+.map > dl > dt .form-check{
+    margin-left:9px;
+}
+
+.map > dl > dt ul{
+    display: flex;
+}
+
+
+
+.map > dl > dt ul li{
+    height: 49px;
+    line-height: 49px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.map > dl > dt ul li.active{
+    border-bottom:2px solid  #008c7a ;
+}
+
 .map  > dl > dt  .hotspot{
     text-indent: 10px;
 }
@@ -213,6 +272,10 @@
   overflow:visible;
   height: auto;
   border-bottom: 1px #ccc solid;
+  clear: both;
+}
+.map >dl > dd:nth-child(2){
+    padding-top: 2px;
 }
 
 .map    >dl > dd .form-check{
@@ -352,6 +415,28 @@
           width: 41px;
       }
 
+
+  .top{
+        font-size: 18px;
+        height: 50px;
+        background: white;
+        line-height: 50px;
+        font-weight: 500;
+        text-indent: 10px;
+    }
+
+    .list-box{
+        background: white;
+        overflow: visible;
+        padding: 0px;
+        box-sizing: border-box;
+        margin: 10px auto;
+    }
+    .list-box h2{
+        padding-top: 8px;
+    } 
+    
+
 }
 
 
@@ -383,4 +468,16 @@
         width: 100%  !important;
     }
 
+}
+
+
+@media screen and (max-width: 1280px) {
+    /* .top{
+        font-size: 18px;
+        height: 50px;
+        background: white;
+        line-height: 50px;
+        font-weight: 500;
+        text-indent: 25px;
+    } */
 }
