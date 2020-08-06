@@ -256,7 +256,7 @@ input[type='checkbox']:active:focus{
 .navbar-default .navbar-nav>li {
     height: 70px;
     line-height: 70px;
-    margin: 0 10px;
+    margin: 0 20px;
 }
 
 .navbar-default .navbar-nav>li:nth-child(1) {
