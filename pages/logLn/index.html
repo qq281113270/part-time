@@ -4,17 +4,18 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="./../../css/common/bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="./../../css/common/base.css" />
     <link rel="stylesheet" type="text/css" href="./index.css" />
-    <script src="./../../js/common/jquery.min.js"></script>
+     <script src="./../../js/common/jquery.min.js"></script>
     <script src="./../../js/common/bootstrap.js"></script>
     <script src="./../../js/common/bootstrap.js"></script>
+    <script src="./index.js"></script>
 </head>
 
 <body>
+    
     <div class="full-screen nav">
         <nav class="navbar navbar-default center" role="navigation">
             <div class="navbar-header">
@@ -57,315 +58,122 @@
                         </a></li>
                     <li><a href="#">我的意向单</a></li>
                     <li><a href="#">我的收藏</a></li>
-                    <!-- <li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-						下拉<b class="caret"></b>
-						</a>
-						<ul class="dropdown-menu">
-							<li><a href="#">Action</a></li>
-							<li><a href="#">Action</a></li>
-							<li><a href="#">Action</a></li>
-							<li><a href="#">Action</a></li>
-						</ul>
-					</li> -->
-                </ul>
-
-                <!--嵌套表单-->
-
-
-                <!-- <form action="" class="navbar-form navbar-left" role="search">
-					<div class="form-group">
-					<input type="text" class="form-control" />
-					</div>
-                    <button type="button" class="btn btn-default">Submit</button>
                     
-				
-				</form>   -->
-
+                </ul>
             </div>
         </nav>
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- <div class="full-screen nav">
-        <div class="center">
-            <div class="left-box">
-                <div class="logo">
-                    <img src="./../../image/logo.gif" />
+    <div class="back">
+ 
+    </div>
+   <div class="content">
+       <div  class="form">
+                <div class='title'>
+                    登录
                 </div>
-                <div class="menu">
-                    <ul>
-                        <li class="acitve">首页</li>
-                        <li>我的意向单</li>
-                        <li>我的收藏</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="right-box">
-                <ul>
-                    <li>
-                        <img src="./../../image/user.png" />
-                    </li>
-                    <li class="odd">
-                        登录
-                    </li>
-                    <li>|</li>
-                    <li class="odd">注册</li>
-                </ul>
-            </div>
-        </div>
-    </div> -->
-    <!-- <div class="content"> -->
-        <div class="center search">
-            <div class="left-box">
-                <div class="form-group address">
-                    <select class="form-control" id="exampleFormControlSelect1">
-                        <option>
-                            广东
-                        </option>
-                        <option>
-                            广西
-                        </option>
-                        <option>
-                            贵州
-                        </option>
-                        <option>
-                            上海
-                        </option>
-                    </select>
-                </div>
-                <div class="custom-file search-box">
-                    <input type="email" class="form-control search-input" id="exampleInputEmail1"
-                        aria-describedby="emailHelp" />
-                </div>
-                <button type="button" class="btn button">
-                    <img src="./../../image/search.png" />
-                </button>
-                <div class="medium">
-                    媒介
-                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-down" fill="currentColor"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-                    </svg>
-                </div>
-                <div class="district">
-                    片区
-                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-down" fill="currentColor"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-                    </svg>
-                </div>
-            </div>
-            <div class="right-box">
-                <div class="qr-code">
-                    <img src="./../../image/qr-code.png" />
-                </div>
-                <div class="scan">
-                    扫描二维码下载APP
-                </div>
-                <div class="list">
-                    <img src="./../../image/list.png" />
-                </div>
-                <div class="list-text">
-                    列表
-                </div>
-                <div class="collect">
-                    <img src="./../../image/collect.png" />
-                </div>
-                <div class="collect-text">
-                    收藏
-                </div>
-            </div>
-        </div>
-        <div class="map center">
-            <div class="left-box">
-                <img src="./../../image/map.png" />
-            </div>
-            <div class="right-box">
                 <dl>
+                    <dd>
+                        <ul>
+                            <!-- <li>手机号</li> -->
+                            <li>
+                                <input   type="text"  class="form-control"   placeholder="请输入手机号码">
+                            </li>
+                        </ul>
+                    </dd>
+
+                    <dd>
+                        <ul>
+                            <!-- <li>密码</li> -->
+                            <li>
+                                <input id="password"  type="password"  class="form-control"   placeholder="请输入密码">
+                                <div class='eye'>
+                                    <img status='0' src="../../image/closeEye.png">
+                              </div>
+                          </li>
+                          
+                        </ul>
+                    </dd>
+
+
+                    <dd>
+                        <ul>
+                            <!-- <li>验证码</li> -->
+                            <li>
+                                <div class="drag">
+                                    <div class="bg"></div>
+                                    <div class="text" onselectstart="return false;">滑动验证</div>
+                                    <div class="btn">>></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </dd>
+              
                     <dt>
-                        <div class="left-box">
-                            <div class="hotspot">
-                                热点推选
-                            </div>
-                        </div>
-                        <div class="right-box">
-                            <div class="put-in">
-                                我要投放
-                            </div>
+                        <div>
+                            提交
                         </div>
                     </dt>
-
                     <dd>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+                        <div class="register-log-in ">
+                            <div class="left-box">新用户注册</div>
+                            <div class="right-box">忘记密码?</div>
                         </div>
-                        <div class="advertising">
-                            <img src="./../../image/ad.png" />
-                        </div>
-                        <div class="info">
-                            <div class="title">
-                                罗湖深南大道广告
-                            </div>
-                            <div class="collect">
-                                <img src="./../../image/collect.png" />
-                            </div>
-                            <div class="occupation">
-                                <dl>
-                                    <dt>载体 :</dt>
-                                    <dd>自由职业</dd>
-                                </dl>
-                                <dl>
-                                    <dt>地段 :</dt>
-                                    <dd>30000人/天</dd>
-                                </dl>
-                            </div>
-                            <div class="price-box">
-                                <span class="price">2000/</span>
-                                <span>天</span>
-                            </div>
-                        </div>
-                    </dd>
-                    <dd>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                        </div>
-                        <div class="advertising">
-                            <img src="./../../image/ad.png" />
-                        </div>
-                        <div class="info">
-                            <div class="title">
-                                罗湖深南大道广告
-                            </div>
-                            <div class="collect">
-                                <img src="./../../image/collect.png" />
-                            </div>
-                            <div class="occupation">
-                                <dl>
-                                    <dt>载体 :</dt>
-                                    <dd>自由职业</dd>
-                                </dl>
-                                <dl>
-                                    <dt>地段 :</dt>
-                                    <dd>30000人/天</dd>
-                                </dl>
-                            </div>
-                            <div class="price-box">
-                                <span class="price">2000/</span>
-                                <span>天</span>
-                            </div>
-                        </div>
-                    </dd>
-
-                    <dd>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                        </div>
-                        <div class="advertising">
-                            <img src="./../../image/ad.png" />
-                        </div>
-                        <div class="info">
-                            <div class="title">
-                                罗湖深南大道广告
-                            </div>
-                            <div class="collect">
-                                <img src="./../../image/collect.png" />
-                            </div>
-                            <div class="occupation">
-                                <dl>
-                                    <dt>载体 :</dt>
-                                    <dd>自由职业</dd>
-                                </dl>
-                                <dl>
-                                    <dt>地段 :</dt>
-                                    <dd>30000人/天</dd>
-                                </dl>
-                            </div>
-                            <div class="price-box">
-                                <span class="price">2000/</span>
-                                <span>天</span>
-                            </div>
-                        </div>
-                    </dd>
-
-                    <dd>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                        </div>
-                        <div class="advertising">
-                            <img src="./../../image/ad.png" />
-                        </div>
-                        <div class="info">
-                            <div class="title">
-                                罗湖深南大道广告
-                            </div>
-                            <div class="collect">
-                                <img src="./../../image/collect.png" />
-                            </div>
-                            <div class="occupation">
-                                <dl>
-                                    <dt>载体 :</dt>
-                                    <dd>自由职业</dd>
-                                </dl>
-                                <dl>
-                                    <dt>地段 :</dt>
-                                    <dd>30000人/天</dd>
-                                </dl>
-                            </div>
-                            <div class="price-box">
-                                <span class="price">2000/</span>
-                                <span>天</span>
-                            </div>
-                        </div>
-                    </dd>
-
-                    <dd>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                        </div>
-                        <div class="advertising">
-                            <img src="./../../image/ad.png" />
-                        </div>
-                        <div class="info">
-                            <div class="title">
-                                罗湖深南大道广告
-                            </div>
-                            <div class="collect">
-                                <img src="./../../image/collect.png" />
-                            </div>
-                            <div class="occupation">
-                                <dl>
-                                    <dt>载体 :</dt>
-                                    <dd>自由职业</dd>
-                                </dl>
-                                <dl>
-                                    <dt>地段 :</dt>
-                                    <dd>30000人/天</dd>
-                                </dl>
-                            </div>
-                            <div class="price-box">
-                                <span class="price">2000/</span>
-                                <span>天</span>
-                            </div>
-                        </div>
+                        
                     </dd>
                 </dl>
-            </div>
+                
+       </div>
+       
+       
+   </div>
+
+
+
+
+<!-- 
+    <form class="form-horizontal">
+        <div class="form-group">
+          <label for="inputEmail3" class="col-sm-2 control-label">手机号码</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="inputEmail3" placeholder="请输入手机号码">
+          </div>
         </div>
-    <!-- </div> -->
+        <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">验证码</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="inputEmail3" placeholder="请输入验证码">
+            </div>
+          </div>
+        <div class="form-group">
+          <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+          <div class="col-sm-10">
+            <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"> Remember me
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-default">Sign in</button>
+          </div>
+        </div>
+      </form>
+ -->
+
+
+
+
+  
+   
+   
 </body>
 
 </html>

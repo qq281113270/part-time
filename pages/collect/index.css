@@ -215,10 +215,11 @@ body{
     overflow: visible;
 }
 .map > dl > dt{
-    height: 50px;
+    height: 60px;
     line-height: 50px;
-    border-bottom: 1px #008c7a solid;
+    border-bottom: 1px #0AAF95 solid;
     width: 100%;
+	margin-bottom: 20px;
     /* margin: 0 10px; */
 }
 .map > dl > dt .form-check{
@@ -237,10 +238,11 @@ body{
     margin-left: 10px;
     cursor: pointer;
     font-size: 17px;
+	margin-top: 10px;
 }
 
 .map > dl > dt ul li.active{
-    border-bottom:2px solid  #008c7a ;
+    border-bottom:2px solid  #0AAF95 ;
 }
 
 .map  > dl > dt  .hotspot{
@@ -250,11 +252,11 @@ body{
 
 
 .map .put-in{
-    border: 1px solid #008c7a ;
+    border: 1px solid #0AAF95 ;
     border-radius: 5px;
     padding:0px 10px;
     margin-top: 5px;
-    color: #008c7a ;
+    color: #0AAF95 ;
     font-size: 16px;
     height: 35px;
     line-height: 35px;
@@ -268,10 +270,10 @@ body{
 
 .map >dl > dd{
   display: flex;
-  padding: 10px;
+  padding: 26px;
   overflow:visible;
   height: auto;
-  border-bottom: 1px #ccc solid;
+  border-bottom: 1px #DADADA solid;
   clear: both;
 }
 .map >dl > dd:nth-child(2){
@@ -290,7 +292,7 @@ body{
 .map    >dl > dd .form-check  input{
     position: absolute;
     top: 50%;
-    left: 50%;
+    left:0%;
     transform: translate(-50%,-50%);
 }
 
@@ -308,7 +310,8 @@ body{
 }
 .map    >dl > dd .info .title{
   position: absolute;
-  left: 10px;
+  left: 20px;
+
 
 }
 .map     >dl > dd .info .collect{
@@ -331,15 +334,16 @@ body{
       font-size: 14px;
       margin: 0;
       padding: 0;
-      height: 20px;
+      height: 27px;
       line-height: 20px;
+	  margin-left: 10px;
   }
   .map    >dl > dd .info .occupation dt{
    width: 70px;
    font-size: 14px;
    margin: 0;
    padding: 0;
-   color: #888;
+   color: #A1A1A1;
    margin-right: 4px;
   }
   .map   >dl > dd .info .occupation   dd{
@@ -347,6 +351,7 @@ body{
     flex: 1;
     margin: 0;
     padding: 0;
+	margin-left: 16px;
   }
 
 
