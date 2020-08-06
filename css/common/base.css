@@ -295,6 +295,22 @@ input[type='checkbox']:active:focus{
  box-shadow:none;
 }
 
+.paging{
+    height: 70px;
+    width: 100%;
+}
+  .pagination{
+    float: right;
+}
+.footing{
+    height: 100%;
+    background:#008c7a !important ;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+}
+
 @media screen and (max-width: 768px) {
     .nav .log-in {
 
