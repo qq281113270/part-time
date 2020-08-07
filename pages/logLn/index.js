@@ -23,13 +23,13 @@ $(function(){
 
 
 
-   function $(a) {
+   function $q(a) {
     return document.querySelector(a);//获取元素的函数
 }
-var oDarg = $(".drag");
-var oBg = $(".bg");
-var oText = $(".text");
-var oBtn = $(".btn");
+var oDarg = $q(".drag");
+var oBg = $q(".bg");
+var oText = $q(".text");
+var oBtn = $q(".btn");
 var success = false;//判断验证是否成功
 var distance = oDarg.offsetWidth - oBtn.offsetWidth;//验证成功的距离
 oBtn.onmousedown = function (eve) {//给物块设置鼠标按下事件
