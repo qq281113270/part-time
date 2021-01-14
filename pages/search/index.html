@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./../../css/common/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="./../../css/common/base.css" />
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+    <script src="./../../js/common/jquery.min.js"></script>
+    <script src="./../../js/common/bootstrap.js"></script>
+    <script src="./../../js/common/rem.js"></script>
+</head>
+
+<body>
+    <div class="page">
+
+
+        <div class="full-screen nav">
+            <nav class="navbar navbar-default center" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- <button class="icon close">Close</button> -->
+
+                    <div class="navbar-brand logo">
+                        <img src="./../../image/logo.gif" />
+                    </div>
+
+
+                    <div class="navbar-brand">
+                        <div class="log-in">
+                            <ul>
+                                <li>
+                                    <img src="./../../image/user.png" />
+                                </li>
+                                <li class="odd">
+                                    登录
+                                </li>
+                                <li>|</li>
+                                <li class="odd">注册</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <!--嵌套下拉菜单-->
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="#">
+                                首页
+                            </a></li>
+                        <li><a href="#">我的意向单</a></li>
+                        <li class="active"><a href="#">我的收藏</a></li>
+
+
+                    </ul>
+
+
+                </div>
+            </nav>
+        </div>
+
+
+
+        <div class="full-screen top">
+            <div class="center search">
+                <div class="left-box">
+                    <div class="form-group address">
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>
+                                广东
+                            </option>
+                            <option>
+                                广西
+                            </option>
+                            <option>
+                                贵州
+                            </option>
+                            <option>
+                                上海
+                            </option>
+                        </select>
+                    </div>
+                    <div class="custom-file search-box">
+                        <input type="email" placeholder="请输入关键词找周边广告" class="form-control search-input"
+                            id="exampleInputEmail1" aria-describedby="emailHelp" />
+                    </div>
+                    <button type="button" class="btn button">
+                        <img src="../../image/search.png" />
+                    </button>
+                    <!-- <div class="medium">
+                    媒介
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-down" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                </div>
+                <div class="district">
+                    片区
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-down" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                </div> -->
+                </div>
+                <div class="right-box">
+                    <div class="qr-code">
+                        <img src="../../image/qr-code.png" />
+                    </div>
+                    <div class="scan">
+                        扫描二维码下载APP
+                    </div>
+                    <!-- <div class="list">
+                    <img src="../../image/list.png" />
+                </div> -->
+                    <!-- <div class="list-text">
+                    列表
+                </div> -->
+                    <div class="collect">
+                        <img src="../../image/Group 12 Copy.png" />
+                    </div>
+                    <div class="collect-text">
+                        按地图
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="popular-elected center">
+            <h3>
+                热门推选
+            </h3>
+            <ul>
+                <li>
+                    <dl>
+                        <dd>
+                            <img src="../../image/ad.png">
+                        </dd>
+                        <dd>
+                            <div class="elect-title">
+                                电视广告屏
+                            </div>
+                            <div class="info">
+                                <span>主要人群：</span>
+                                <span>上班白领</span>
+                            </div>
+                            <div class="info">
+                                <span>主要人群：</span>
+                                <span>上班白领</span>
+                            </div>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dd>
+                            <img src="../../image/ad.png">
+                        </dd>
+                        <dd>
+                            <div class="elect-title">
+                                电视广告屏
+                            </div>
+                            <div class="info">
+                                <span>主要人群：</span>
+                                <span>上班白领</span>
+                            </div>
+                            <div class="info">
+                                <span>主要人群：</span>
+                                <span>上班白领</span>
+                            </div>
+                        </dd>
+                    </dl>
+                </li>
+
+
+
+            </ul>
+        </div>
+        <div class="search-option center">
+            <ul>
+                <li>
+                    <dl>
+                        <dt>位置</dt>
+                        <div class="dd-box">
+                            <dd>罗湖区</dd>
+                            <dd>福田区</dd>
+                            <dd>盐田区</dd>
+                            <dd>宝安区</dd>
+                            <dd>龙岗区</dd>
+                            <dd>龙华区</dd>
+                            <dd>光明区</dd>
+                            <dd>坪山区</dd>
+                            <dd>大鹏新区</dd>
+                        </div>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>人群</dt>
+                        <div class="dd-box">
+                            <dd>不限</dd>
+                            <dd>密集</dd>
+                            <dd>稀疏</dd>
+                        </div>
+
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>价格/天</dt>
+                        <div class="dd-box">
+                            <dd>
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+                                1000以下
+                            </dd>
+                            <dd>
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+                                1000-1500元
+                            </dd>
+                            <dd>
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+                                1500-2000元
+                            </dd>
+                            <dd>
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+                                2000-3000元
+                            </dd>
+                            <dd>
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+                                3000-5000元
+                            </dd>
+                            <dd>
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+                                5000-8000元
+                            </dd>
+                            <dd>
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+                                8000元以上
+                            </dd>
+                        </div>
+
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>介质</dt>
+                        <div class="dd-box">
+                            <dd>
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+                                电视
+                            </dd>
+                            <dd>
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+                                报纸
+                            </dd>
+                            <dd>
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+                                户外媒体
+                            </dd>
+                            <dd>
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+                                邮政自由媒体
+                            </dd>
+                        </div>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>空闲状态</dt>
+                        <div class="dd-box">
+                            <dd>
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+                                闲置
+                            </dd>
+                            <dd>
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+                                在用
+                            </dd>
+                            <dd>
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+                                即将闲置
+                            </dd>
+                        </div>
+                    </dl>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="center list-box">
+            <h2>
+                共收藏12个罗湖区媒体资源广告
+            </h2>
+            <div class="map ">
+ 
+                <dl>
+                    <dt>
+                        <div class="left-box">
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+                            </div>
+                            <ul>
+                                <li class="active">综合排序</li>
+                                <li>价格</li>
+                            </ul>
+
+
+                        </div>
+                        <div class="right-box">
+                            <div class="put-in">
+                                我要投放
+                            </div>
+                        </div>
+                    </dt>
+
+                    <dd>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+                        </div>
+                        <div class="advertising">
+                            <img src="./../../image/ad.png" />
+                        </div>
+                        <div class="info">
+                            <div class="title">
+                                罗湖深南大道广告
+                            </div>
+                            <div class="collect">
+                                <img src="./../../image/collect.png" />
+                            </div>
+                            <div class="occupation">
+
+                                <dl class="nth-child">
+                                    <dt>资源名称 : </dt>
+                                    <dd>北京市地王厦停车场车门显示屏</dd>
+                                </dl>
+                                <dl>
+                                    <dt>详细地址 : </dt>
+                                    <dd>北京市朝阳东路地王大厦停车场东门大街32-93号</dd>
+                                </dl>
+                                <dl>
+                                    <dt>载体 : </dt>
+                                    <dd> LED屏</dd>
+                                </dl>
+                                <dl>
+                                    <dt>商圈 : </dt>
+                                    <dd>东门购物广场</dd>
+                                </dl>
+                                <dl>
+                                    <dt>地段 : </dt>
+                                    <dd> 办公区、居民区</dd>
+                                </dl>
+
+                            </div>
+                            <div class="price-box">
+                                <span class="price">2000/</span>
+                                <span>天</span>
+                            </div>
+                        </div>
+                    </dd>
+                    <dd>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+                        </div>
+                        <div class="advertising">
+                            <img src="./../../image/ad.png" />
+                        </div>
+                        <div class="info">
+                            <div class="title">
+                                罗湖深南大道广告
+                            </div>
+                            <div class="collect">
+                                <img src="./../../image/collect.png" />
+                            </div>
+                            <div class="occupation">
+
+                                <dl class="nth-child">
+                                    <dt>资源名称 : </dt>
+                                    <dd>北京市地王厦停车场车门显示屏</dd>
+                                </dl>
+                                <dl>
+                                    <dt>详细地址 : </dt>
+                                    <dd>北京市朝阳东路地王大厦停车场东门大街32-93号</dd>
+                                </dl>
+                                <dl>
+                                    <dt>载体 : </dt>
+                                    <dd> LED屏</dd>
+                                </dl>
+                                <dl>
+                                    <dt>商圈 : </dt>
+                                    <dd>东门购物广场</dd>
+                                </dl>
+                                <dl>
+                                    <dt>地段 : </dt>
+                                    <dd> 办公区、居民区</dd>
+                                </dl>
+
+                            </div>
+                            <div class="price-box">
+                                <span class="price">2000/</span>
+                                <span>天</span>
+                            </div>
+                        </div>
+                    </dd>
+                    <dd>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+                        </div>
+                        <div class="advertising">
+                            <img src="./../../image/ad.png" />
+                        </div>
+                        <div class="info">
+                            <div class="title">
+                                罗湖深南大道广告
+                            </div>
+                            <div class="collect">
+                                <img src="./../../image/collect.png" />
+                            </div>
+                            <div class="occupation">
+
+                                <dl class="nth-child">
+                                    <dt>资源名称 : </dt>
+                                    <dd>北京市地王厦停车场车门显示屏</dd>
+                                </dl>
+                                <dl>
+                                    <dt>详细地址 : </dt>
+                                    <dd>北京市朝阳东路地王大厦停车场东门大街32-93号</dd>
+                                </dl>
+                                <dl>
+                                    <dt>载体 : </dt>
+                                    <dd> LED屏</dd>
+                                </dl>
+                                <dl>
+                                    <dt>商圈 : </dt>
+                                    <dd>东门购物广场</dd>
+                                </dl>
+                                <dl>
+                                    <dt>地段 : </dt>
+                                    <dd> 办公区、居民区</dd>
+                                </dl>
+
+                            </div>
+                            <div class="price-box">
+                                <span class="price">2000/</span>
+                                <span>天</span>
+                            </div>
+                        </div>
+                    </dd>
+                    <dd>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+                        </div>
+                        <div class="advertising">
+                            <img src="./../../image/ad.png" />
+                        </div>
+                        <div class="info">
+                            <div class="title">
+                                罗湖深南大道广告
+                            </div>
+                            <div class="collect">
+                                <img src="./../../image/collect.png" />
+                            </div>
+                            <div class="occupation">
+
+                                <dl class="nth-child">
+                                    <dt>资源名称 : </dt>
+                                    <dd>北京市地王厦停车场车门显示屏</dd>
+                                </dl>
+                                <dl>
+                                    <dt>详细地址 : </dt>
+                                    <dd>北京市朝阳东路地王大厦停车场东门大街32-93号</dd>
+                                </dl>
+                                <dl>
+                                    <dt>载体 : </dt>
+                                    <dd> LED屏</dd>
+                                </dl>
+                                <dl>
+                                    <dt>商圈 : </dt>
+                                    <dd>东门购物广场</dd>
+                                </dl>
+                                <dl>
+                                    <dt>地段 : </dt>
+                                    <dd> 办公区、居民区</dd>
+                                </dl>
+
+                            </div>
+                            <div class="price-box">
+                                <span class="price">2000/</span>
+                                <span>天</span>
+                            </div>
+                        </div>
+                    </dd>
+                    <dd>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+                        </div>
+                        <div class="advertising">
+                            <img src="./../../image/ad.png" />
+                        </div>
+                        <div class="info">
+                            <div class="title">
+                                罗湖深南大道广告
+                            </div>
+                            <div class="collect">
+                                <img src="./../../image/collect.png" />
+                            </div>
+                            <div class="occupation">
+
+                                <dl class="nth-child">
+                                    <dt>资源名称 : </dt>
+                                    <dd>北京市地王厦停车场车门显示屏</dd>
+                                </dl>
+                                <dl>
+                                    <dt>详细地址 : </dt>
+                                    <dd>北京市朝阳东路地王大厦停车场东门大街32-93号</dd>
+                                </dl>
+                                <dl>
+                                    <dt>载体 : </dt>
+                                    <dd> LED屏</dd>
+                                </dl>
+                                <dl>
+                                    <dt>商圈 : </dt>
+                                    <dd>东门购物广场</dd>
+                                </dl>
+                                <dl>
+                                    <dt>地段 : </dt>
+                                    <dd> 办公区、居民区</dd>
+                                </dl>
+
+                            </div>
+                            <div class="price-box">
+                                <span class="price">2000/</span>
+                                <span>天</span>
+                            </div>
+                        </div>
+                    </dd>
+                    <dd>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+                        </div>
+                        <div class="advertising">
+                            <img src="./../../image/ad.png" />
+                        </div>
+                        <div class="info">
+                            <div class="title">
+                                罗湖深南大道广告
+                            </div>
+                            <div class="collect">
+                                <img src="./../../image/collect.png" />
+                            </div>
+                            <div class="occupation">
+
+                                <dl class="nth-child">
+                                    <dt>资源名称 : </dt>
+                                    <dd>北京市地王厦停车场车门显示屏</dd>
+                                </dl>
+                                <dl>
+                                    <dt>详细地址 : </dt>
+                                    <dd>北京市朝阳东路地王大厦停车场东门大街32-93号</dd>
+                                </dl>
+                                <dl>
+                                    <dt>载体 : </dt>
+                                    <dd> LED屏</dd>
+                                </dl>
+                                <dl>
+                                    <dt>商圈 : </dt>
+                                    <dd>东门购物广场</dd>
+                                </dl>
+                                <dl>
+                                    <dt>地段 : </dt>
+                                    <dd> 办公区、居民区</dd>
+                                </dl>
+
+                            </div>
+                            <div class="price-box">
+                                <span class="price">2000/</span>
+                                <span>天</span>
+                            </div>
+                        </div>
+                    </dd>
+
+
+
+                </dl>
+            </div>
+            <nav class="paging" aria-label="Page navigation ">
+                <ul class="pagination">
+                    <li>
+                        <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li>
+                        <a href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+
+    </div>
+
+    <div class="footing">
+        版权所有：中国邮政集团
+    </div>
+    <script>
+        $(function () {
+
+            if (parseInt($('.page').css('height')) > document.documentElement.clientHeight) {
+                $('.footing').css({
+                    position: "relative"
+                })
+            } else {
+                $('.footing').css({
+                    position: "fixed",
+                    bottom: 0,
+                })
+            }
+
+        })
+    </script>
+</body>
+
+</html>

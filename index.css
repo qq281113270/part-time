@@ -66,7 +66,7 @@
 .search {
     height:100px;
     line-height: 100px;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 .search .left-box,
 .search .right-box
@@ -76,12 +76,12 @@
 }
 
 .search .left-box{
-  padding-top:32px;
+  padding-top:28px;
   height:68px;
 }
 .search .right-box{
-    height: 100px;
-    line-height: 100px;
+    height: 80px;
+    line-height: 80px;
     color: #9d9d9d;
 }
 .search .address {
@@ -91,11 +91,24 @@
     border-radius:5px  0px 0px 5px;
 }
 .search .search-box {
-    width: 150px;
+    width: 250px;
     margin-left: -1px;
 }
+
+
+.form-control {
+  display: block;
+  width: 100%;
+  height:34px;
+  padding:6px 12px;
+  font-size:14px;
+  line-height: 2px;
+  color: #333333;
+  background-color:#FFFFFF;
+
+}
 .search .button{
- background: #008c7a;
+ background:#0AAF95;
  height:34px;
  border-radius:0px  5px 5px 0px;
 }
@@ -113,13 +126,14 @@
 
 .search .medium{
     /* width: 100px; */
-    margin-left: 50px;
+    margin-left: 60px;
     height: 36px;
     line-height: 36px;
 }
 .search .district svg,
 .search .medium svg{
     color:#c7c7c7 ;
+	margin-left: 10px;
 }
 .search .district{
     /* width: 100px; */
@@ -133,7 +147,7 @@
  
 }
 .search  .qr-code img{
-  width: 100px;
+  width: 70px;
 }
 .search  .scan{
     color: #9d9d9d;
@@ -164,11 +178,8 @@
 .map{
     display: flex;
     overflow:visible;
-    margin-top: 20px;
 }
-.map > .left-box{
-   flex: 1;
-  }
+
  .map   .left-box img{
       width: 100%;
       display: block;
@@ -177,10 +188,32 @@
      width: 430px;
 }
 
+.map > .left-box{
+    flex: 1;
+    position: relative;
+  
+   }
+ .map > .left-box iframe{
+    width: 100%;
+     height: 100%;
+     min-height: 400px;
+   }  
+.map  > .left-box  .loops{
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    z-index: 3;
+}
+
+.map  > .left-box   .loops .btn {
+    margin-left:10px;
+}
+
 .map  > .right-box > dl > dt{
-    height: 50px;
-    line-height: 50px;
-    border-bottom: 1px #ccc solid;
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px #EAEAEA solid;
+	border-top: 1px #EAEAEA solid;
     width: 100%;
     /* margin: 0 10px; */
 }
@@ -191,12 +224,12 @@
 
 
 .map .put-in{
-    border: 1px solid #008c7a ;
+    border: 1px solid #0AAF95;
     border-radius: 5px;
     padding:0px 10px;
-    margin-top: 5px;
-    color: #008c7a ;
-    font-size: 16px;
+    margin-top: 12px;
+    color: #0AAF95 ;
+    font-size: 14px;
     height: 35px;
     line-height: 35px;
     margin-right:7px;
@@ -206,14 +239,38 @@
 
 .map  > .right-box >dl > dd{
   display: flex;
-  margin: 10px;
+  margin-top: 20px;
   overflow:visible;
   height: auto;
-  border-bottom: 1px #ccc solid;
+  border-bottom: 1px #EAEAEA solid;
+	padding-bottom: 8px;
+	
 }
 
 .map  > .right-box >dl > dd .form-check{
     margin-top:34px;
+	margin-right: 8px;
+	margin-left: 16px;
+}
+
+.input[type='checkbox']
+{
+	
+	outline: none;
+    -webkit-appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    line-height: 18px;
+    margin-right: 10px;
+    position: relative;
+    border-radius: 50%;
+    border: 1px solid #C8C8C8;
+    cursor: pointer;
 }
 .map  > .right-box >dl > dd .advertising img{
   width: 120px;
@@ -224,10 +281,11 @@
     height: 95px;
     flex: 1;
     position: relative;
+	margin-left: 12px;
 }
 .map  > .right-box >dl > dd .info .title{
   position: absolute;
-  left: 10px;
+  left: 5px;
 
 }
 .map  > .right-box  >dl > dd .info .collect{
@@ -241,7 +299,7 @@
 
   .map  > .right-box  >dl > dd .info .occupation{
     position: absolute;
-    left:  10px;
+    left:  5px;
     top: 40px;
     width: 200px;
   }
@@ -250,7 +308,7 @@
       font-size: 14px;
       margin: 0;
       padding: 0;
-      height: 20px;
+      height: 24px;
       line-height: 20px;
   }
   .map  > .right-box  >dl > dd .info .occupation dt{

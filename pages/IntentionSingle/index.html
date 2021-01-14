@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+        content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./../../css/common/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="./../../css/common/base.css" />
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+    <script src="./../../js/common/jquery.min.js"></script>
+    <script src="./../../js/common/bootstrap.js"></script>
+    <script src="./../../js/common/bootstrap.js"></script>
+
+</head>
+
+<body>
+
+    
+
+
+
+
+    <div class="Intention-single">
+        <div class="full-screen nav nav-position">
+            <nav class="navbar navbar-default center" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- <button class="icon close">Close</button> -->
+    
+                    <div class="navbar-brand logo">
+                        <img src="./../../image/logo.gif" />
+                    </div>
+    
+    
+                    <div class="navbar-brand">
+                        <div class="log-in">
+                            <ul>
+                                <li>
+                                    <img src="./../../image/user.png" />
+                                </li>
+                                <li class="odd">
+                                    登录
+                                </li>
+                                <li>|</li>
+                                <li class="odd">注册</li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <!--嵌套下拉菜单-->
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="#">
+                                首页
+                            </a></li>
+                        <li><a href="#">我的意向单</a></li>
+                        <li><a href="#">我的收藏</a></li>
+    
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="Intention-single-full">
+            <div class="Intention-single-wrap">意向单</div>
+        </div>
+        <div class="Intention-single-container">
+            <div class="from-box w">
+                <div class="row">
+                    <div class="col-md-4 row-h">
+                        <label class="col-md-4">意向单编号</label>
+                        <input type="text" class="form-control1 col-md-8" placeholder="345243645657" >
+                    </div>
+                    <div class="col-md-4  row-h">
+                        <label class="col-md-4">意向单状态</label>
+                        <input type="text" class="form-control1 col-md-8" placeholder="报刊亭" value="报刊亭">
+                    </div>
+                    <div class="col-md-4  row-h">
+                        <label class="col-md-4">投放方式</label>
+                        <input type="text" class="form-control1 col-md-8" placeholder="媒介" value="媒介">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 row-h">
+                        <label class="col-md-4">媒介资源编号</label>
+                        <input type="text" class="form-control1 col-md-8" placeholder="345243645657" >
+                    </div>
+                    <div class="col-md-4  row-h">
+                        <label class="col-md-4">媒介类型</label>
+                        <input type="text" class="form-control1 col-md-8" placeholder="2020/02/20" value="2020/02/20">
+                    </div>
+                    <div class="col-md-4  row-h">
+                        <label class="col-md-4">提交日期</label>
+                        <input type="text" class="form-control1 col-md-8" placeholder="20200920" value="20200920">
+                    </div>
+                </div>
+                
+                <div class="btn-set clear">
+                    <button id="search-btn" type="button" class="fr btn btn-primary">查询</button>
+                    <button id="reset-btn" type="button" class="fr btn btn-default">重置</button>
+                </div>
+
+            </div>
+            <div class="table-box w">
+                   <div class="table-header-box">
+                       <table cellspacing="0" cellpadding="0">
+                           <th width="140px">意向单编号</th>
+                           <th width="140px">资源编号</th>
+                           <th>资源名称</th>
+                           <th width="100px">媒介类型</th>
+                           <th width="100px">投放价格</th>
+                           <th width="140px">投放方式</th>
+                           <th width="160px">日期</th>
+                           <th width="170px">操作</th>
+                       </table>
+                   </div> 
+                   <div class="table-body-box">
+                       <table cellspacing="0" cellpadding="0" id="content-table">
+                           <tr>
+                               <td width="140px">Gdsz0001</td>
+                               <td width="140px">Gdsz0001</td>
+                               <td >老街25号报刊亭</td>
+                               <td width="100px">报刊亭</td>
+                               <td width="100px">1200元/月</td>
+                               <td width="140px">单媒体投放</td>
+                               <td width="160px">2019-09-30</td>
+                               <td width="170px">
+                                   <button class="my-btn btn-blue">查看</button>
+                                   <button class="my-btn btn-gray">修改</button>
+                               </td>
+                           </tr>
+                           <tr>
+                                <td width="140px">Gdsz0001</td>
+                                <td width="140px">Gdsz0001</td>
+                                <td >老街25号报刊亭</td>
+                                <td width="100px">报刊亭</td>
+                                <td width="100px">1200元/月</td>
+                                <td width="140px">单媒体投放</td>
+                                <td width="160px">2019-09-30</td>
+                                <td width="170px">
+                                    <button class="my-btn btn-blue">查看</button>
+                                    <button class="my-btn btn-gray">修改</button>
+                                </td>
+                            </tr>
+                                                   
+                       </table>
+                   </div>
+            </div>
+
+            <div class="table-pagnation-box" id="table-pagnation-box">
+               
+            </div>
+        </div>
+        
+
+
+        
+
+
+
+    </div>
+
+
+
+
+
+
+    <script>
+
+        var ohtml = $(`<tr>
+                                <td width="140px">Gdsz0001</td>
+                                <td width="140px">Gdsz0001</td>
+                                <td >老街25号报刊亭</td>
+                                <td width="100px">报刊亭</td>
+                                <td width="100px">1200元/月</td>
+                                <td width="140px">单媒体投放</td>
+                                <td width="160px">2019-09-30</td>
+                                <td width="170px">
+                                    <button class="my-btn btn-blue">查看</button>
+                                    <button class="my-btn btn-gray">修改</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                 <td width="140px">Gdsz0001</td>
+                                 <td width="140px">Gdsz0001</td>
+                                 <td >老街25号报刊亭</td>
+                                 <td width="100px">报刊亭</td>
+                                 <td width="100px">1200元/月</td>
+                                 <td width="140px">单媒体投放</td>
+                                 <td width="160px">2019-09-30</td>
+                                 <td width="170px">
+                                     <button class="my-btn btn-blue">查看</button>
+                                     <button class="my-btn btn-gray">修改</button>
+                                 </td>
+                             </tr>
+                             <tr>
+                                <td width="140px">Gdsz0001</td>
+                                <td width="140px">Gdsz0001</td>
+                                <td >老街25号报刊亭</td>
+                                <td width="100px">报刊亭</td>
+                                <td width="100px">1200元/月</td>
+                                <td width="140px">单媒体投放</td>
+                                <td width="160px">2019-09-30</td>
+                                <td width="170px">
+                                    <button class="my-btn btn-blue">查看</button>
+                                    <button class="my-btn btn-gray">修改</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                 <td width="140px">Gdsz0001</td>
+                                 <td width="140px">Gdsz0001</td>
+                                 <td >老街25号报刊亭</td>
+                                 <td width="100px">报刊亭</td>
+                                 <td width="100px">1200元/月</td>
+                                 <td width="140px">单媒体投放</td>
+                                 <td width="160px">2019-09-30</td>
+                                 <td width="170px">
+                                     <button class="my-btn btn-blue">查看</button>
+                                     <button class="my-btn btn-gray">修改</button>
+                                 </td>
+                             </tr>
+                             <tr>
+                                <td width="140px">Gdsz0001</td>
+                                <td width="140px">Gdsz0001</td>
+                                <td >老街25号报刊亭</td>
+                                <td width="100px">报刊亭</td>
+                                <td width="100px">1200元/月</td>
+                                <td width="140px">单媒体投放</td>
+                                <td width="160px">2019-09-30</td>
+                                <td width="170px">
+                                    <button class="my-btn btn-blue">查看</button>
+                                    <button class="my-btn btn-gray">修改</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                 <td width="140px">Gdsz0001</td>
+                                 <td width="140px">Gdsz0001</td>
+                                 <td >老街25号报刊亭</td>
+                                 <td width="100px">报刊亭</td>
+                                 <td width="100px">1200元/月</td>
+                                 <td width="140px">单媒体投放</td>
+                                 <td width="160px">2019-09-30</td>
+                                 <td width="170px">
+                                     <button class="my-btn btn-blue">查看</button>
+                                     <button class="my-btn btn-gray">修改</button>
+                                 </td>
+                             </tr>
+                             <tr>
+                                <td width="140px">Gdsz0001</td>
+                                <td width="140px">Gdsz0001</td>
+                                <td >老街25号报刊亭</td>
+                                <td width="100px">报刊亭</td>
+                                <td width="100px">1200元/月</td>
+                                <td width="140px">单媒体投放</td>
+                                <td width="160px">2019-09-30</td>
+                                <td width="170px">
+                                    <button class="my-btn btn-blue">查看</button>
+                                    <button class="my-btn btn-gray">修改</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                 <td width="140px">Gdsz0001</td>
+                                 <td width="140px">Gdsz0001</td>
+                                 <td >老街25号报刊亭</td>
+                                 <td width="100px">报刊亭</td>
+                                 <td width="100px">1200元/月</td>
+                                 <td width="140px">单媒体投放</td>
+                                 <td width="160px">2019-09-30</td>
+                                 <td width="170px">
+                                     <button class="my-btn btn-blue">查看</button>
+                                     <button class="my-btn btn-gray">修改</button>
+                                 </td>
+                             </tr>
+                            `);
+        var opage = $(`<nav aria-label="Page navigation">
+                        <ul class="pagination ">
+                        <li>
+                            <a href="#" aria-label="Previous">
+                            <span aria-hidden="false">&laquo;</span>
+                            </a>
+                        </li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li>
+                            <a href="#" aria-label="Next">
+                            <span aria-hidden="false">&raquo;</span>
+                            </a>
+                        </li>
+                        </ul>
+                    </nav><span class="total-page">共10页</span>`);
+
+        $('#search-btn').on('click', function(){
+            $('#content-table').append(ohtml);
+            $('#table-pagnation-box').html(opage);
+        })
+        
+
+        $('#reset-btn').on('click', function(){
+            $('#content-table').html(`<tr>
+                               <td width="140px">Gdsz0001</td>
+                               <td width="140px">Gdsz0001</td>
+                               <td >老街25号报刊亭</td>
+                               <td width="100px">报刊亭</td>
+                               <td width="100px">1200元/月</td>
+                               <td width="140px">单媒体投放</td>
+                               <td width="160px">2019-09-30</td>
+                               <td width="170px">
+                                   <button class="my-btn btn-blue">查看</button>
+                                   <button class="my-btn btn-gray">修改</button>
+                               </td>
+                           </tr>
+                           <tr>
+                                <td width="140px">Gdsz0001</td>
+                                <td width="140px">Gdsz0001</td>
+                                <td >老街25号报刊亭</td>
+                                <td width="100px">报刊亭</td>
+                                <td width="100px">1200元/月</td>
+                                <td width="140px">单媒体投放</td>
+                                <td width="160px">2019-09-30</td>
+                                <td width="170px">
+                                    <button class="my-btn btn-blue">查看</button>
+                                    <button class="my-btn btn-gray">修改</button>
+                                </td>
+                            </tr>`);
+            $('#table-pagnation-box').empty();
+        })
+
+    </script>
+</body>
+
+</html>

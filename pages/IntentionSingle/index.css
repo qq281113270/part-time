@@ -1,0 +1,249 @@
+html, body, .Intention-single {
+    width: 100%;
+    background: #f3f3f3;
+}
+.Intention-single-full {
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0 8px 16px 0 rgba(212,212,212,0.50);
+}
+.Intention-single-wrap {
+    width: 1280px;
+    margin: 0 auto;
+    height: 70px;
+    line-height: 70px;
+    font-size: 20px;
+    color: #333333;
+    letter-spacing: 0;
+    margin-bottom: 20px;
+	font-weight: 500;
+    
+}
+.Intention-single-container {
+    margin: 0 auto;
+    width: 1200px;
+    
+}
+.Intention-single-container .from-box {
+    background: #fff;
+    padding: 0 30px;
+    overflow: hidden;
+	box-shadow: 4px 6px 10px 0 rgba(229,229,229,0.50);
+} 
+
+.Intention-single-container .table-box {
+    /* height: 606px; */
+}
+.w {
+    width: 100%;
+}
+.row-h {
+    line-height: 46px;
+    font-size: 14px;
+    color: #333333;
+    margin-top: 30px;
+}
+.form-control1 {
+    display: block;
+    height: 40px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #C2C2C2;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    margin-top: 3px ;
+}
+label {
+    margin-bottom: 0 !important;
+}
+.btn-set{
+    margin: 30px 0;
+    height:40px ;
+}
+.btn-set > .btn-default {
+    width: 125px;
+    height: 40px;
+    margin-right: 20px;
+    color: #008C7A;
+    background-color: #fff;
+    border: 1px solid #008C7A;
+
+}
+
+.clear:after {
+    content: '';
+    clear: both;
+    display: brlock;
+}
+.fr{
+    float:right;
+}
+
+
+.table-box{
+    margin-top: 20px;
+	box-shadow: 4px 6px 10px 0 rgba(229,229,229,0.50);
+}
+
+.table-header-box{
+    width: 100%;
+}
+
+.table-header-box table{
+    width: 100%;
+    height: 40px;
+    background-color: white;
+}
+.table-header-box table th{
+    height: 40px;
+    line-height: 40px;
+    text-align: left;
+    font-weight: 400;
+    padding: 0 12px;
+	border-bottom: 1px #DADADA solid;
+}
+
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 400;
+}
+
+.table-body-box table{
+    width: 100%;
+}
+
+.table-body-box table td,tr{
+    border-collapse: collapse;
+}
+
+
+.table-body-box table tr:nth-child(2n){
+    background-color: #F5F7F6;
+}
+.table-body-box table tr:nth-child(2n+1){
+    background-color: white;
+}
+
+.table-body-box table td{
+    height: 50px;
+    padding: 0 12px;
+    color: #9C9C9C;
+}
+.my-btn{
+    width: 64px;
+    height: 26px;
+    text-align: center;
+    line-height: 24px;
+    border-radius: 4px;
+    outline: none;
+    background-color: white;
+}
+
+.btn-blue{
+    color: #3CBAFF;
+    border: 1px solid #3CBAFF;
+    color: #3CBAFF;
+}
+
+.btn-blue:hover,.btn-gray:hover{
+    background-color: #F3F3F3;
+}
+
+.btn-gray{
+    color: #BEBEBE;
+    border: 1px solid #BEBEBE;
+    margin-left: 12px;
+}
+
+.table-pagnation-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.total-page{
+    margin-left: 10px;
+}
+.pagination > li > a, .pagination > li > span {
+    color: #008C7A;
+}
+
+@media only screen and (max-width: 750px){
+
+    .Intention-single{
+        overflow: hidden;
+    }
+    .Intention-single-wrap{
+        width: 100%;
+        padding: 0 12px;
+    }
+
+    .Intention-single-container{
+        max-width: 100%;
+    }
+
+    .Intention-single-container .from-box{
+        padding: 0;
+    }
+
+    .row{
+        margin: 0;
+        padding: 0 12px;
+    }
+    .row-h{
+        margin-top: 10px;
+    }
+
+    .col-md-4{
+        padding-left: 0;
+    }
+
+    .btn-set{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 12px;
+    }
+    .btn-primary, .btn-default {
+        width: 100px !important;
+        height: 30px !important;
+    }
+
+    .btn-set button{
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .table-box{
+        overflow-x: auto;
+    }
+
+    .table-box .table-header-box, .table-box .table-body-box{
+        width: 1110px;
+    }
+}
+.btn-set > .btn-primary {
+    color: #fff;
+    width: 125px ;
+    height: 40px;
+    background-color: #0AAF95;
+    border-color: #0AAF95;
+}
+.btn-set > .btn-primary:active {
+    background-color: #0AAF95;
+    border-color: #0AAF95;
+}
+.btn-set > .btn-default:active {
+    background-color: #fff;
+    color: #008C7A;
+    border: 1px solid #0AAF95;
+}

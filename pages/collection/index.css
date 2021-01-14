@@ -25,7 +25,8 @@ body{
 }  
 
 .center  .left-box{
-    margin-top: 80px;
+    margin-top: 90px;
+	margin-left: 100px;
  }
 
  .back{
@@ -40,11 +41,11 @@ body{
         margin-top: 116px;
  }
  .center  .left-box img{
-     height: 111px;
+     height: 90px;
      margin-right: 30px;
  }
  .center  .left-box {
-     font-size: 30px;
+     font-size: 26px;
  }
 
  .view{
@@ -66,6 +67,16 @@ body{
 
 
 @media screen and (max-width: 768px) {
+
+       .map >dl > dd{
+        display: flex;
+         padding: 0px; 
+        overflow:visible;
+        height: auto;
+        border-bottom: 1px #DADADA solid;
+        clear: both;
+      }
+
     .content  dl{
         width: 90%;
     }
@@ -95,7 +106,12 @@ body{
      .center .left-box{
         margin-top: 0;
         padding-top: 80px;
+        margin-left: 0px;
      }
+
+     
+  
+
      .center .left-box img{
         margin-top: 0;
      }

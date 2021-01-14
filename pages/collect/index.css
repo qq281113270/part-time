@@ -14,6 +14,11 @@ body{
   
     display: flex;
 }
+.page{
+    height: auto;
+    overflow: visible;
+ 
+}
 /* .nav .left-box .logo {
     padding-top: 10px;
     height: 60px;
@@ -292,10 +297,13 @@ body{
 .map    >dl > dd .form-check  input{
     position: absolute;
     top: 50%;
-    left:0%;
+    left:50%;
     transform: translate(-50%,-50%);
 }
 
+  .pagination{
+    float: right;
+	  margin-right: 2%;}
 .map >dl > dd .advertising img{
   /* width: 120px; */
   width: 292px;
