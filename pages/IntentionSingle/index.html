@@ -84,13 +84,13 @@
                         <label class="col-md-4">意向单状态</label>
                         <input type="text" class="form-control1 col-md-8" placeholder="报刊亭" value="报刊亭">
                     </div>
-                    <div class="col-md-4  row-h">
+                    <div class="col-md-4  row-h last-row-h">
                         <label class="col-md-4">投放方式</label>
                         <input type="text" class="form-control1 col-md-8" placeholder="媒介" value="媒介">
                     </div>
                 </div>
 
-                <div class="row">
+                <div class="row more-condition">
                     <div class="col-md-4 row-h">
                         <label class="col-md-4">媒介资源编号</label>
                         <input type="text" class="form-control1 col-md-8" placeholder="345243645657" >
@@ -104,11 +104,15 @@
                         <input type="text" class="form-control1 col-md-8" placeholder="20200920" value="20200920">
                     </div>
                 </div>
+
+               
                 
                 <div class="btn-set clear">
                     <button id="search-btn" type="button" class="fr btn btn-primary">查询</button>
                     <button id="reset-btn" type="button" class="fr btn btn-default">重置</button>
                 </div>
+
+                <span class="arrow-down"></span>
 
             </div>
             <div class="table-box w">
@@ -176,7 +180,7 @@
 
 
     <script>
-
+        var num = 0;
         var ohtml = $(`<tr>
                                 <td width="140px">Gdsz0001</td>
                                 <td width="140px">Gdsz0001</td>
@@ -336,6 +340,19 @@
                                 </td>
                             </tr>`);
             $('#table-pagnation-box').empty();
+        })
+
+        $('.arrow-down').on('click', function(){
+            num++;
+
+            if(num%2==0){
+                $('.last-row-h, .more-condition').css('display', 'none');
+                $(this).removeClass('on');
+            }else{
+                $('.last-row-h, .more-condition').css('display', 'block');
+                $(this).addClass('on');
+            }
+           
         })
 
     </script>

@@ -12,11 +12,10 @@ html, body, .Intention-single {
     margin: 0 auto;
     height: 70px;
     line-height: 70px;
-    font-size: 20px;
+    font-size: 24px;
     color: #333333;
     letter-spacing: 0;
-    margin-bottom: 20px;
-	font-weight: 500;
+    margin-bottom: 30px;
     
 }
 .Intention-single-container {
@@ -28,7 +27,6 @@ html, body, .Intention-single {
     background: #fff;
     padding: 0 30px;
     overflow: hidden;
-	box-shadow: 4px 6px 10px 0 rgba(229,229,229,0.50);
 } 
 
 .Intention-single-container .table-box {
@@ -38,18 +36,18 @@ html, body, .Intention-single {
     width: 100%;
 }
 .row-h {
-    line-height: 46px;
+    line-height: 40px;
     font-size: 14px;
     color: #333333;
     margin-top: 30px;
 }
 .form-control1 {
     display: block;
-    height: 40px;
+    height: 34px;
     padding: 6px 12px;
     font-size: 14px;
     line-height: 1.42857143;
-    color: #C2C2C2;
+    color: #555;
     background-color: #fff;
     background-image: none;
     border: 1px solid #ccc;
@@ -72,6 +70,7 @@ label {
     width: 125px;
     height: 40px;
     margin-right: 20px;
+    line-height: 30px;
     color: #008C7A;
     background-color: #fff;
     border: 1px solid #008C7A;
@@ -90,7 +89,6 @@ label {
 
 .table-box{
     margin-top: 20px;
-	box-shadow: 4px 6px 10px 0 rgba(229,229,229,0.50);
 }
 
 .table-header-box{
@@ -106,16 +104,8 @@ label {
     height: 40px;
     line-height: 40px;
     text-align: left;
-    font-weight: 400;
+    font-weight: bold;
     padding: 0 12px;
-	border-bottom: 1px #DADADA solid;
-}
-
-label {
-  display: inline-block;
-  max-width: 100%;
-  margin-bottom: 5px;
-  font-weight: 400;
 }
 
 .table-body-box table{
@@ -135,7 +125,7 @@ label {
 }
 
 .table-body-box table td{
-    height: 50px;
+    height: 40px;
     padding: 0 12px;
     color: #9C9C9C;
 }
@@ -160,7 +150,7 @@ label {
 }
 
 .btn-gray{
-    color: #BEBEBE;
+    color: #666;
     border: 1px solid #BEBEBE;
     margin-left: 12px;
 }
@@ -178,14 +168,36 @@ label {
     color: #008C7A;
 }
 
-@media only screen and (max-width: 750px){
+.arrow-down{
+    display: none;
+    width: 13px;
+    height: 8px;
+    padding: 5px;
+    margin: 20px auto;
+    background-image: url(./../../image/arrow_down.png);
+    background-size: 13px 8px;
+    transform: rotate(.5turn);
+}   
 
+.arrow-down.on{
+    transform: rotate(0);
+}
+
+@media only screen and (max-width: 750px){
+    .arrow-down{
+        display: block;
+    }
+    
     .Intention-single{
         overflow: hidden;
     }
     .Intention-single-wrap{
         width: 100%;
         padding: 0 12px;
+    }
+
+    .last-row-h, .more-condition{
+        display: none;
     }
 
     .Intention-single-container{
@@ -201,11 +213,15 @@ label {
         padding: 0 12px;
     }
     .row-h{
-        margin-top: 10px;
+        margin-top: 0;
     }
 
+    .form-control1{
+        margin-top: 0;
+    }
     .col-md-4{
         padding-left: 0;
+        
     }
 
     .btn-set{
@@ -235,15 +251,15 @@ label {
     color: #fff;
     width: 125px ;
     height: 40px;
-    background-color: #0AAF95;
-    border-color: #0AAF95;
+    background-color: #008C7A;
+    border-color: #008C7A;
 }
 .btn-set > .btn-primary:active {
-    background-color: #0AAF95;
-    border-color: #0AAF95;
+    background-color: #008C7A;
+    border-color: #008C7A;
 }
 .btn-set > .btn-default:active {
     background-color: #fff;
     color: #008C7A;
-    border: 1px solid #0AAF95;
+    border: 1px solid #008C7A;
 }

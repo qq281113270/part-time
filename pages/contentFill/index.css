@@ -46,7 +46,7 @@ body {
 }
 
 .list-box dl dt {
-    font-size: 22px;
+    font-size: 24px;
     color: #333333;
     letter-spacing: 0;
     height: 50px;
@@ -68,7 +68,6 @@ body {
 .list-box dl dd ul li:nth-child(1) {
     width: 150px;
     font-size: 16px;
-	margin-top: 10px;
 }
 
 .list-box dl dd textarea {
@@ -79,7 +78,6 @@ body {
 
 .list-box dl dd ul li:nth-child(2) {
     flex: 1;
-	margin-top: 10px;
 }
 .list-box dl dd ul li span {
     color: red;

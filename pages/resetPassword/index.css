@@ -105,8 +105,8 @@ body{
 
 .content  dl dt .btn-success{
     width: 100%;
-    height: 50px;
-    background: #0AAF95; 
+    /* height: 50px; */
+    /* background: #0AAF95; */
     box-shadow: 0 4px 12px 0 rgba(93,193,177,0.50);
     border-radius: 5px;
     text-align: center;
@@ -116,13 +116,7 @@ body{
     margin: 0 auto;
 }
 
-.btn-success{
- 
-background-color:#0AAF95;
- 
-border-color: #0AAF95;
-border-color: #0AAF95;
-}
+
 
 
 

@@ -26,8 +26,6 @@ dt {
     border: 1px solid #ced4da !important;
 }
 
-.left-box2{border: #FFFFFF}
-
 /* 复选框 */
 /* input[type="checkbox"] {
     -webkit-appearance: none;  
@@ -202,12 +200,19 @@ input[type='checkbox']:active:focus{
 
 
 
- 
+
+
 .btn-default{
     border-color: #d4d4d4;
     outline: none;    
 }
 
+.btn-default:active{
+
+}
+
+
+ 
 .btn-default:focus, .btn-default.focus{
     border-color: #d4d4d4;
     background-color:white;
@@ -215,7 +220,7 @@ input[type='checkbox']:active:focus{
 }
 /* 按下去 */
 .btn-default:active:hover, .btn-default.active:hover, .open > .dropdown-toggle.btn-default:hover, .btn-default:active:focus, .btn-default.active:focus, .open > .dropdown-toggle.btn-default:focus, .btn-default:active.focus, .btn-default.active.focus, .open > .dropdown-toggle.btn-default.focus{
-    background-color:rgba(206, 206, 206, 0.856);
+    background-color:rgba(223, 223, 223, 0.856);
     border-color:rgba(233, 233, 233, 0.856);
 }
 .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default{
@@ -236,11 +241,15 @@ input[type='checkbox']:active:focus{
 }
 
 
+
 .btn-success{
  
     background-color:#008c7a;
     border-color: #008c7a;
 }
+
+
+
 
 /*失去焦点*/
 .btn-success:focus, .btn-success.focus{
@@ -368,8 +377,6 @@ input[type='checkbox']:active:focus{
     line-height: 50px;
     text-align: center;
     color: white;
-    width: 100%;
-    
 }
 
 
@@ -403,6 +410,7 @@ input[type='checkbox']:active:focus{
     }
 
 }
+
 
 
 .launch-foot {
